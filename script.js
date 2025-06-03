@@ -1,6 +1,6 @@
-function calculateBMI(event){
+function calculateBMI(event) {
     event.preventDefault(); // prevent form submission
-    
+
     const height = parseFloat(document.getElementById("height").value);
     const weight = parseFloat(document.getElementById("weight").value);
 
@@ -22,6 +22,6 @@ function calculateBMI(event){
     else {
 
         document.getElementById("result").innerText =
-          "Please enter valid height and weight.";
-      }
+            "Please enter valid height and weight.";
     }
+}

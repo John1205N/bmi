@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+:root {
+    --main-bg-color:#1DB954;
+    --text-color: #ffffff;
+    --colour:#B3B3B3;
+    --font-size: 16px;
+    --logo-font: 'Rubik', sans-serif;
+    --text-font: "Oswald", sans-serif;
+    --button-font: "Spectral SC", serif;
+  }
+  
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    height: 400px;
+    width: 450px;
+    background-color: rgb(22, 22, 22);
+    border: 1px solid var(--main-bg-color);
+    border-radius: 6px;
+    padding: 30px 0 0 0px;
+   
+}
+h1{
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    color: var(--main-bg-color);
+    font-family: var(--logo-font);
+    text-transform: uppercase;
+   
+}
+
+label{
+    padding:30px 0 10 30px;
+    display: block;
+    font-size: 18px;
+    font-family: var(--text-font);
+}
+input{
+    height: 36px;
+    width: 90%;
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+    background-color: rgb(20, 20, 20);
+    padding-left: 15px;
+    color: var(--main-bg-color);
+    font-family: var(--logo-font);
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0px 0 0px 23px;
+}
+
+  input[type="number"]:focus {
+    border: 1px solid var(--main-bg-color); /* border when focused */
+    outline: none;
+  }
+  button {
+    position: relative;
+    height: 48px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 125px;
+    margin-top: 24px;
+    background-color: var(--main-bg-color, #4CAF50); /* fallback color */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: var(--button-font, 'Rubik', sans-serif);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #3e8e41; /* darker green for hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.97);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+p{
+    font-family: var(--text-font);
+font-size: 16px;
+margin-left: 123px;
+margin-top: 24px;
+}
